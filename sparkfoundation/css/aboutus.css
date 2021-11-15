@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+}
+.bg-image{
+    background:linear-gradient(rgba(11, 220, 248, 0.4), rgba(184, 187, 10, 0.479)), url(../images/hand-putting-coins-in-glass-jar-for-giving-and-donation-concept-picture-id813128966.jpg);
+    width: 100vw; min-height: 100vh;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+h1{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:Poppins;
+}
+
+nav{
+    background-color: rgb(14, 170, 110);
+    height: 70px;
+    width: 100%;
+}
+nav .logo{
+    line-height: 70px;
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+nav .logo:hover{
+    color: red;
+}
+nav ul{
+    float: right;
+    margin-right: 3rem;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 70px;
+    margin: auto 20px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    line-height: 70px;
+    font-size: 27px;
+    color: white;
+    margin-right: 30px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:456px){
+    nav .logo{
+        font-size: 22px;
+        margin-left: 17px;
+    }
+}
+@media (max-width:860px){
+
+nav ul{
+    position: relative;
+    left:-100%;
+    transition: all .3s;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color:  rgb(59, 58, 58);
+    text-align: center;
+    margin-right: 0px;
+    z-index: 200;
+}
+nav ul li{
+    display: block;
+    margin: 30px auto;
+    transition: all 0.3s;
+}
+nav ul li:hover{
+    background-color: rgb(204, 235, 235);
+}
+#check:checked ~ ul{
+    left: 0px;
+}
+.checkbtn{
+    display: block;
+}
+}
+.about{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+.about h1{
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.about p{
+    position: absolute;
+    top: 80px;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 4px;
+    color: rgb(0, 0, 0);
+    }
